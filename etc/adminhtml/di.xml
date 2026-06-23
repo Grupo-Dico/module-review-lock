@@ -11,5 +11,11 @@
         <plugin name="gdmexico_review_lock_save"
                 type="GDMexico\ReviewLock\Plugin\Adminhtml\ReviewSavePlugin"/>
     </type>
-
+    <preference for="Magento\Review\Block\Adminhtml\Grid"
+            type="GDMexico\ReviewLock\Block\Adminhtml\Grid"/>
+        <type name="Magento\Review\Block\Adminhtml\Grid">
+        <plugin name="gdmexico_review_grid_export"
+                type="GDMexico\ReviewLock\Plugin\Adminhtml\ReviewGridExportPlugin"/>
+        </type>
 </config>
+
